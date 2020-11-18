@@ -1,7 +1,10 @@
-# PDF color remover
+# PDF colour remover
 
-This short script will generate a copy of a given PDF with all the color removed (replaced by white pixels instead).
-It was created as a way to remove the the colored solutions from past exams such that I could practice without seeing the solutions.
+This short script will generate a copy of a given PDF with all the colour removed (replaced by white pixels instead).
+
+The script was created as a way to erase the solutions from past university exam.
+This allows me to practice writing the exam without seeing the solutions.
+This only works if the solutions are in colour and the exam questions are not.
 
 ## Usage
 
