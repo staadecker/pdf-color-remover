@@ -21,11 +21,13 @@ Pre-requisites: Python 3.
 
 4. Copy the PDF you'd like to process to the current folder.
 
-5. Run the script.
+5. Run the script with the appropriate arguments.
 
-    `python script.py <my-pdf-to-convert.pdf> <generated-document.pdf>`
+    `python script.py <my-pdf-to-convert.pdf>`
 
 ## Notes
 
 - Internally, the script converts your PDF to an image. This means that in the generated PDF, you won't be able to copy text or work with PDF elements. After the script runs it's all just one image!
- 
+
+- If you find that the script is filtering out too much or too little content you can edit `STD_CUTOFF` in `script.py`.
+The smaller the value the more content is filtered out. See code comments for further details.

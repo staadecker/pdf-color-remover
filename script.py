@@ -4,11 +4,15 @@ import sys, os, tempfile
 import numpy as np
 from PIL import Image
 
-filepath = sys.argv[1]
-output_filename = sys.argv[2]
+# Represents the maximum allowed standard deviation in the R, G, & B values.
+# The greater the standard deviation the further the pixel is from grey.
+STD_CUTOFF = 5
+
+filename = sys.argv[1]
+output_filename = "processed_" + filename
 
 print("Loading pdf...")
-pages = pdf2image.convert_from_path(filepath)
+pages = pdf2image.convert_from_path(filename)
 
 # Create an output pdf
 output_pdf = fpdf.FPDF(unit="cm", format="letter")
@@ -17,7 +21,6 @@ output_pdf = fpdf.FPDF(unit="cm", format="letter")
 LETTER_PAGE_WIDTH = 21.6 * 0.95  # Reduce by 95% since for some reason there's a margin
 BLACK = np.array([0, 0, 0])
 WHITE = np.array([255, 255, 255])
-STD_CUTOFF = 5
 
 
 def erase_colour(image):
