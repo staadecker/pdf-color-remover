@@ -1,4 +1,4 @@
 pdf2image
 fpdf
-numpy
+numpy==1.19.3 # Must pin to avoid this bug https://github.com/numpy/numpy/issues/16744
 pillow
