@@ -7,7 +7,7 @@ It was created as a way to remove the the colored solutions from past exams such
 
 Pre-requisites: Python 3.
 
-1. Clone the repository to your computer. 
+1. In terminal clone the repository to your computer. 
 
     `git clone https://github.com/staadecker/pdf-colour-remover.git`
 
@@ -19,11 +19,13 @@ Pre-requisites: Python 3.
 
     `pip install -r requirements.txt`
 
-4. Copy the PDF you'd like to process to the current folder.
+4. Copy the PDF you'd like to process to the current directory.
 
-5. Run the script with the appropriate arguments.
+5. Run the script with the file name as the argument.
 
-    `python script.py <my-pdf-to-convert.pdf>`
+    `python script.py my_document_to_convert.pdf`
+
+6. `processed_my_document_to_convert.pdf` will be generated in the current directory.
 
 ## Notes
 
