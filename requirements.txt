@@ -1,0 +1,4 @@
+pdf2image
+fpdf
+numpy
+pillow
