@@ -31,3 +31,5 @@ Pre-requisites: Python 3.
 
 - If you find that the script is filtering out too much or too little content you can edit `STD_CUTOFF` in `script.py`.
 The smaller the value the more content is filtered out. See code comments for further details.
+
+- The script adds a blank page at the start of your document. If this bothers you, feel free to remove the blank page with one of the many online editors.
