@@ -9,7 +9,8 @@ from PIL import Image
 STD_CUTOFF = 5
 
 filename = sys.argv[1]
-output_filename = "processed_" + filename
+(path, tail) = os.path.split(filename)
+output_filename = os.path.join(path, "processed_" + tail)
 
 print("Loading pdf...")
 pages = pdf2image.convert_from_path(filename)
@@ -54,5 +55,5 @@ for i, page in enumerate(pages):
 
     output_pdf.image(temp_file_name, w=LETTER_PAGE_WIDTH, x=0, type="JPEG")
 
-print("Saving file...")
+print(f"Saving file to {output_filename}...")
 output_pdf.output(output_filename)
