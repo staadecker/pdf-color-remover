@@ -21,14 +21,16 @@ Pre-requisites: Python 3.
 3. Install the required dependencies. 
 
     `pip install -r requirements.txt`
+    
+4. You'll also need to install `poppler` see instructions [here](https://pypi.org/project/pdf2image/).
 
-4. Copy the PDF you'd like to process to the current directory.
+5. Copy the PDF you'd like to process to the current directory.
 
-5. Run the script with the file name as the argument.
+6. Run the script with the file name as the argument.
 
     `python script.py my_document_to_convert.pdf`
 
-6. `processed_my_document_to_convert.pdf` will be generated in the current directory.
+7. `processed_my_document_to_convert.pdf` will be generated in the current directory.
 
 ## Notes
 
